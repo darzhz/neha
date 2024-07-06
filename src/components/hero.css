@@ -48,7 +48,7 @@
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 @keyframes background-pan {
     from {
