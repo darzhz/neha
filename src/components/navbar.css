@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(233deg, #fbe9f7 0%, #efebfa 100%);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    width: 90vw;
+    gap: 50%;
+    position: relative;
+    margin:0 auto;
+    margin-top: 18px;
+
+  }
+  .link{
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-family: 'satoshi-light',sans-serif;
+    text-decoration: none;
+    /* color: white; */
+  }
+  .logo {
+    font-size: 1.5rem;
+    color: #6b5057;
+  }
+  @media (max-width: 768px){
+    .nav {
+        gap: 25px;
+        margin-top: 3vh;
+    }
+  }
