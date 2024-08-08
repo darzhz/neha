@@ -1,0 +1,43 @@
+.card {
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: black;
+
+  }
+  
+  .cardHeader {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .cardTitle {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 16px;
+    background: black;
+    color: white;
+  }
+  
+  .cardImage {
+    width: 60vw;
+    height: auto;
+    display: block;
+  }
+  
+  .cardContent {
+    padding: 16px;
+  }
+  .desc{
+    color: #ffffffd1;
+    font-size: medium;
+    padding: 19px; 
+  }
