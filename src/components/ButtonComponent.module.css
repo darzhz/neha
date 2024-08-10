@@ -11,8 +11,8 @@
     padding: 8px 16px; /* Adjusted padding */
     border-radius: 8px;
     text-decoration: none;
-    color: #fff;
-    background-color: #007aff; /* Blue color for Figma */
+    color: #6b5057;
+    background-color: #f3e7f5; 
     font-size: 0.875rem; /* Default font size */
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: fit-content;
@@ -22,6 +22,7 @@
   
   .button:hover {
     background-color: #005bb5; /* Darker blue on hover */
+    color: white;
     transform: scale(1.05); /* Slightly enlarge on hover */
   }
   

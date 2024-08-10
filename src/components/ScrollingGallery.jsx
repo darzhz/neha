@@ -1,36 +1,9 @@
 import React from 'react';
 import style from './ScrollingGallery.module.css';
 
-const galleryItems = [
-  {
-    image: '/sprite_1.png', // Placeholder image 1
-    title: 'Sprite Concept',
-    description: '',
-    link: '#', // Replace with your link
-  },
-  {
-    image: '/sprite_2.png', // Placeholder image 2
-    title: 'Sprite Concept',
-    description: '',
-    link: '#', // Replace with your link
-  },
-  {
-    image: '/sprite_3.png', // Placeholder image 2
-    title: 'Sprite Concept',
-    description: '',
-    link: '#', // Replace with your link
-  },
-  {
-    image: '/sprite_4.png', // Placeholder image 2
-    title: 'Sprite Concept',
-    description: '',
-    link: '#', // Replace with your link
-  }
-];
-
-function ScrollingGallery() {
+function ScrollingGallery({galleryItems}) {
   return (
-    <div className={style.galleryWrapper}>
+    <div className={`${style.galleryWrapper}`}>
       <div className={style.scrollContainer}>
         {galleryItems.concat(galleryItems).map((item, index) => (
           <div key={index} className={style.galleryItem}>

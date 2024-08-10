@@ -2,7 +2,10 @@
     position: relative;
     width: 100%;
     overflow: hidden; /* Hide any overflow */
+    /* background-color: #f3e7f5; */
+    padding: 12px;
   }
+  
   
   .scrollContainer {
     display: flex;
@@ -14,7 +17,7 @@
     position: relative;
     min-width: 300px; /* Adjust based on your needs */
     flex: 0 0 auto;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin-right: 16px; /* Space between items */
@@ -24,6 +27,7 @@
   
   .galleryImage {
     width: 60vw;
+    max-width: 500px;
     height: auto;
     display: block;
     object-fit: cover;
@@ -113,7 +117,7 @@
   
   @media (max-width: 576px) {
     .scrollContainer {
-      animation: marquee 30s linear infinite; /* Slower scrolling on smaller screens */
+      animation: marquee 30s linear infinite normal; /* Slower scrolling on smaller screens */
     }
   }
   
