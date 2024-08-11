@@ -9,7 +9,7 @@
   
   .scrollContainer {
     display: flex;
-    animation: marquee 20s linear infinite;
+    animation: marquee 23s linear infinite normal;
     transition: animation 0.3s ease;
   }
   
@@ -117,7 +117,7 @@
   
   @media (max-width: 576px) {
     .scrollContainer {
-      animation: marquee 30s linear infinite normal; /* Slower scrolling on smaller screens */
+      animation: marquee 35s linear infinite normal; /* Slower scrolling on smaller screens */
     }
   }
   

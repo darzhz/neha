@@ -24,7 +24,7 @@
   }
   
   .cardTitle {
-    font-size: 1.8rem;
+    font-size: 2.5em;
     margin: 0;
     padding: 16px;
     /* background: black; */
@@ -43,7 +43,7 @@
   }
   .desc{
     /* color: #ffffffd1; */
-    font-size: medium;
+    font-size: 1.2em;
     padding: 19px; 
   }
   @media (max-width:720px)  {
