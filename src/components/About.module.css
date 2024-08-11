@@ -1,0 +1,44 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    margin: 55px;
+    height: 50vh;
+    font-size: 2em;
+    justify-content: center;
+    position: relative;
+}
+.content{
+    margin: 20px;
+    font-family: 'satoshi-light';
+    font-size: 0.8em;
+    position: relative;
+    z-index: 2;
+}
+.lines{
+    position: absolute;
+    z-index: 1;
+    width: 80vw;
+    top: 46%;
+}
+.svgResponsive {
+    width: 100%;  /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+   
+    /* max-width: 1000px; 
+    max-height: 500px;  */
+  }
+@media (min-width: 1200px){
+    .content{
+        font-size: 1em;
+    }
+    .box {
+        height: 90vh;
+    }
+    .lines{
+        width: 88vw;
+        top: 17%;
+        transform: rotate(15deg);
+    }
+}
