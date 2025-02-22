@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import ScrollingGallery from "./components/ScrollingGallery";
 import ShowCase from "./components/ShowCase";
 import About from "./components/About";
+import { projects } from "@/data";
+import { ProjectShowcase } from "./components/ProjectShowcase";
 
 function App() {
   const Sprite = [
@@ -103,7 +105,8 @@ function App() {
     {
       image: "/dashboard/Report.png", // Placeholder image 2
       title: "Course Enrollment Insites",
-      description: "Indicates all the metrics associated with enrollment and retention rates",
+      description:
+        "Indicates all the metrics associated with enrollment and retention rates",
       link: "#", // Replace with your link
     },
     {
@@ -123,34 +126,38 @@ function App() {
     {
       image: "/healthcare/ad1.png",
       title: "Your Health, Your Way!",
-      description: "Find the right doctor, book appointments effortlessly, and manage your health all in one place!",
+      description:
+        "Find the right doctor, book appointments effortlessly, and manage your health all in one place!",
       link: "#", // Replace with your link
     },
     {
       image: "/healthcare/ad2.png",
       title: "Expert Care, Just a Tap Away!",
-      description: "View doctor profiles, check expertise, clinic hours, and book your appointment in seconds.",
+      description:
+        "View doctor profiles, check expertise, clinic hours, and book your appointment in seconds.",
       link: "#", // Replace with your link
     },
     {
       image: "/healthcare/ad3.png",
       title: "Stay on Top of Your Health Reports!",
-      description: "Track and manage your health records effortlessly with our secure medical report storage",
+      description:
+        "Track and manage your health records effortlessly with our secure medical report storage",
       link: "#", // Replace with your link
     },
     {
       image: "/healthcare/ad4.png",
       title: "Seamless Scheduling for a Healthier You!",
-      description: "Choose a convenient time slot, confirm your appointment, and never miss a checkup!",
+      description:
+        "Choose a convenient time slot, confirm your appointment, and never miss a checkup!",
       link: "#", // Replace with your link
     },
     {
       image: "/healthcare/ad5.png",
       title: "UI/UX",
-      description: "This UI/UX project aims to enhance digital healthcare accessibility, making medical consultations more convenient and efficient for users",
+      description:
+        "This UI/UX project aims to enhance digital healthcare accessibility, making medical consultations more convenient and efficient for users",
       link: "#", // Replace with your link
     },
-    
   ];
   return (
     <>
@@ -170,7 +177,16 @@ function App() {
       </motion.div>
       <About />
       <div id="projects">
-      <CardComponent
+        <h2 className="text-3xl font-bold pt-8 pl-8 text-left text-primary drop-shadow-sm md:text-4xl">
+          Case Studies
+        </h2>{" "}
+        {projects.map((project) => (
+          <ProjectShowcase key={project.id} project={project} />
+        ))}
+        <h2 className="text-3xl font-bold pt-8 pl-8 text-left text-primary drop-shadow-sm md:text-4xl">
+          Mini Projects
+        </h2>
+        <CardComponent
           title="HealthCare App"
           image="/healthcare/preview.png"
           desc="This healthcare app is designed to provide a seamless and user-friendly experience for patients seeking medical consultations. The app allows users to search for doctors, book appointments, track health reports, and manage medical records effortlessly. With an intuitive interface, users can explore doctor profiles, check availability, and schedule consultations in just a few taps. The design prioritizes accessibility, efficiency, and a calming aesthetic to ensure a stress-free healthcare journey."
