@@ -17,7 +17,7 @@ function Hero() {
             </a>
             <a
               className="button"
-              href="https://drive.google.com/file/d/1eij8Tb64tsa2tdR3tc4rQjyRgyjy-brk/view?usp=drivesdk"
+              href="/neha_resume.pdf"
             >
               Download Resume
             </a>

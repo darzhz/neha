@@ -9,6 +9,7 @@ import ShowCase from "./components/ShowCase";
 import About from "./components/About";
 import { projects } from "@/data";
 import { ProjectShowcase } from "./components/ProjectShowcase";
+import Footer from "./components/Footer";
 
 function App() {
   const Sprite = [
@@ -227,6 +228,7 @@ function App() {
           galleryItems={camper}
         />
       </div>
+      <Footer/>
     </>
   );
 }

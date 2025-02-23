@@ -12,8 +12,8 @@ function ScrollingGallery({galleryItems}) {
               <div className={style.overlayContent}>
                 <h2 className={style.overlayTitle}>{item.title}</h2>
                 <p className={style.overlayDescription}>{item.description}</p>
-                <a href={item.link} className={style.overlayLink} target="_blank" rel="noopener noreferrer">
-                  View Portfolio
+                <a href={item.image} className={style.overlayLink} target="_blank" rel="noopener noreferrer">
+                  View 
                 </a>
               </div>
             </div>
