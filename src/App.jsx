@@ -228,7 +228,9 @@ function App() {
           galleryItems={camper}
         />
       </div>
+      <div className="contact">
       <Footer/>
+      </div>
     </>
   );
 }
